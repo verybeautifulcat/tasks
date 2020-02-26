@@ -9,9 +9,6 @@ const radians = (degrees) =>
 degrees * (Math.PI / 180);
 
 const getAreaOfTriangle = (side, angle1, angle2) => {
-  //Противолежащий угол вычисляется по формуле: 180 - сумма двух известных углов.
-  const angle3 = 180 - (angle1 + angle2);
-
   const sin1 = Math.sin(radians(angle1));
   const sin2 = Math.sin(radians(angle2));
   const sin3 = Math.sin(Math.PI - radians(angle1 + angle2));

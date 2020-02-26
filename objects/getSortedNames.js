@@ -11,7 +11,7 @@ const getSortedNames = (users) => {
 };
 
 // 2 вариант с использованием деструктуризации
-const getSortedNames = (users) => {
+/*const getSortedNames = (users) => {
   const names = [];
 
   for (const { name } of users) {
@@ -19,7 +19,8 @@ const getSortedNames = (users) => {
   }
 
   return names.sort();
-};
+};*/
+
 
 // Примеры
 const users = [

@@ -25,7 +25,7 @@ const fizzBuzz = (begin, end) => {
 };
 
 // 2 вариант
-const fizzBuzz = (begin, end) => {
+/*const fizzBuzz = (begin, end) => {
   for (let i = begin; i <= end; i += 1) {
     const hasFizz = i % 3 === 0;
     const hasBuzz = i % 5 === 0;
@@ -35,7 +35,7 @@ const fizzBuzz = (begin, end) => {
 
     console.log(hasFizz || hasBuzz ? `${fizzPart}${buzzPart}` : i);
   }
-};
+};*/
 
 
 // Примеры

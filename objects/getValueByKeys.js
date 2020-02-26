@@ -7,7 +7,8 @@
 // 1 вариант
 const getValueByKeys = (obj, keys) => {
   const firstKeyFromArray = keys[0];
-  if (!obj.hasOwnProperty(firstKeyFromArray)) {
+  const hasBarProperty = Object.prototype.hasOwnProperty.call(obj, firstKeyFromArray);
+  if (!hasBarProperty) {
     return null;
   }
   return (keys.length === 1 ? obj[firstKeyFromArray] : getValueByKeys(obj[firstKeyFromArray], keys.slice(1)));
@@ -15,16 +16,17 @@ const getValueByKeys = (obj, keys) => {
 
 
 // 2 вариант
-const getValueByKeys = (data, keys) => {
+/*const getValueByKeys = (data, keys) => {
   let current = data;
   for (const key of keys) {
-    if (!current.hasOwnProperty(key)) {
+    const hasBarProperty = Object.prototype.hasOwnProperty.call(current, key);
+    if (!hasBarProperty) {
       return null;
     }
       current = current[key];
     }
     return current;
-};
+};*/
 
 
 // Примеры

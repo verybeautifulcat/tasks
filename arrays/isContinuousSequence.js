@@ -12,18 +12,17 @@ const isContinuousSequence = (coll) => {
     const element = coll[i];
     const nextElement = coll[i + 1];
   
-    if (element !== nextElement + 1 && element !== nextElement - 1) {
+    if (element !== nextElement - 1) {
       return false;
     }
-	}
+  }
   return true;
   };
 
 
   // Примеры
-  isContinuousSequence([10, 11, 12, 13]);     // true
+isContinuousSequence([10, 11, 12, 13]);     // true
 isContinuousSequence([-5, -4, -3]);         // true
-isContinuousSequence([-5, -6, -7]);         // true
 isContinuousSequence([10, 11, 12, 14, 15]); // false
 isContinuousSequence([1, 2, 2, 3]);         // false
 isContinuousSequence([7]);                  // false

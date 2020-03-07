@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/verybeautifulcat/tasks#readme",
   "devDependencies": {
+    "@hexlet/immutable-fs-trees": "^0.4.1",
     "eslint": "^6.8.0",
     "lodash": "^4.17.15"
   }
